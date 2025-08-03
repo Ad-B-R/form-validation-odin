@@ -27,10 +27,11 @@ body{
 }
 
 #right{
-    flex:0 0 auto;
+    flex:1;
     min-width: 0;
     padding:3rem;
     height: 100%;
+    padding:0;
 }
 .odinText{
     position:absolute;
@@ -57,25 +58,73 @@ body{
 }
 .content{
     /* text-align: center; */
-    font-size:large;
+    font-size:1.2rem;
     font-weight: 400;
-    margin-bottom: 60px; 
+    margin-bottom: 1rem; 
     margin-top: 5%; 
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    /* gap:1rem; */
+    font-size:1.5rem;
+    margin-top:10vh;
 }
 .box{
     display: flex;
-    height: 30%;
+    height: auto;
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 0px 2px 3px -1px grey;
+    gap:2rem;
+    padding:1rem;
+    padding-left: 5rem;
 }
-#lname{
-    margin-left: 30px;
+.box-item{
+    display: flex;
+    height:50%;
+    flex:wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap:1.5rem;
 }
-#phone_no{
-    margin-left: 30px;
+.box-item-item{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: rgb(61, 61, 61);
 }
-#C_password{
-    margin-left: 30px;
+.box-item-item>input{
+    height:1.5rem;
+    width: 10rem;
+    border:0.1px solid #E5E7EB;
+}
+.box-item-item>input:focus{
+    border-radius: 0.15rem;
+    outline:none;
+    border:0.1px solid green;
+}
+
+.box-item-item>input:invalid:focus{
+    border-radius: 0.15rem;
+    outline:none;
+    border:0.1px solid red;
+}
+
+.bottom-right{
+    margin:1.5rem;
+    margin-left: 3rem;
+}
+
+.btn{
+    background-color:#596D48;
+    color:white;
+    border-radius: 0.5rem;
+    border:0.1px solid #596D48;
+    padding:0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0px 2px 3px -1px grey;
 }
 
