@@ -49,6 +49,17 @@ body{
     margin-right: 1rem;
     height: 100%;
 }
+.credit{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform: translate(50%,25rem);
+    font-size: 1.1rem;
+}
+a:visited{
+    color:white;
+}
 #text{
     /* width: 15%; */
     font-size: 15vh;
@@ -126,5 +137,6 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     box-shadow: 0px 2px 3px -1px grey;
+    margin:1rem;
 }
 
