@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div id="container">
+      <div id="left">
+        <div class="odinText">
+            <img src="./images/odin-lined.png" alt="Odin" id="odin_img" height="30%" width="30%">
+            <h1 id="text">
+                ODIN
+            </h1>
+        </div>
+      </div>
+      <div id="right">
+        <div class="content"><b>This is my content</b></div>
+        <div class="box">
+            <h2 style="margin-bottom: 3%;">Let's do this</h2>
+            <form class="form">
+                <label for="fname">First Name</label>
+                <label for="lname" style="margin-left: 120px;">Last Name</label>
+                <br>
+                <input type="text" id="fname" minlength="3" maxlength="30">
+                <input type="text" id="lname" minlength="3" maxlength="30">
+
+                <br>
+
+                <label for="email">Email</label>
+                <label for="phone_no" style="margin-left: 150px;">Phone number</label>
+                <br>
+                <input type="email" id="email"> 
+                <input type="text" minlength="10" maxlength="10" id="phone_no">
+
+                <br>
+                
+                <label for="Password">Password</label>
+                <label for="C_password"style="margin-left: 125px;">Confirm Password</label>
+                <br>
+                <input type="password" id="Password">
+                <input type="password" id="C_password">
+            </form>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
